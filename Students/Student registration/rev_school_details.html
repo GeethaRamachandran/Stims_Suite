@@ -5,21 +5,11 @@ Registration Form
 </title>
 <!-- Latest compiled and minified CSS -->
 <!-- Bootstrap -->
-<link rel="stylesheet" href="  css/breadcrumbs.css">
-    <link href="School Registration/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
   <style type="text/css">
 	
 .centered-form{
@@ -66,76 +56,83 @@ td {
 {
   margin-top:19px;
 }
-.breadcrumb { 
-  list-style: none; 
-  overflow: hidden; 
-  font-size:16px;
-}
-.breadcrumb li { 
-  float: left; 
-}
-.breadcrumb li a {
-  color: white;
-  text-decoration: none; 
-  padding: 10px 0 10px 50px;
-  /* fallback color */
-  background: hsla(0, 0%, 0%,1); 
-  position: relative; 
-  display: block;
-  float: left;
-}
-.breadcrumb li a::after { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
-  border-bottom: 50px solid transparent;
-  border-left: 30px solid hsla(0, 0%, 0%,1);
-  position: absolute;
-  top: 50%;
-  margin-top: -50px; 
-  left: 100%;
-  z-index: 2; 
-}
-.breadcrumb li a::before { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 50px solid transparent;       
-  border-bottom: 50px solid transparent;
-  border-left: 30px solid white;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px; 
-  margin-left: 3px;
-  left: 100%;
-  z-index: 1; 
-}
-.breadcrumb li:first-child a {
-  padding-left: 60px;
- 
-}
-.breadcrumb li:nth-child(4) a {
+.breadcrumb {
+          padding: 0px 27px;
+            list-style: none;
+            overflow: hidden;
+            font-size: 14px;
+            background: white;
+        }
+        .breadcrumb li {
+            float: left;
+        }
+        .breadcrumb li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 0 10px 20px;
+            /*background: brown;*/
+            /* fallback color */
+            
+            background: hsla(0, 0%, 0%, 1);
+            position: relative;
+            display: block;
+            float: left;
+        }
+        .breadcrumb li a::after {
+            content: " ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            /* Go big on the size, and let overflow hide */
+            
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid hsla(0, 0%, 0%, 1);
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            left: 100%;
+            z-index: 2;
+        }
+        .breadcrumb li a::before {
+            content: " ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid white;
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            margin-left: 3px;
+            left: 100%;
+            z-index: 1;
+        }
+        .breadcrumb li:first-child a {
+            padding-left: 27px;
+            
+        }
+        .breadcrumb li:nth-child(4) a {
 
   background: hsla(140, 100%, 40%,1);
  
 }
-.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(140, 100%, 40%,1); 
-  padding-left: 79px;
+.breadcrumb li:nth-child(4) a:after { 
+  border-left-color: hsla(140, 100%, 40%,1); 
+  
 }
-.breadcrumb > li 
-{ 
-  text-shadow: 0 0px 0 #FAE;
-}
+        
+        .breadcrumb > li {
+            text-shadow: 0 0px 0 #FAE;
+        }
 
   </style>
    
 
 </head>
 <body class="margin_for_breadcrumb">
-<ul class="breadcrumb">
+<ul class="breadcrumb col-lg-offset-1  col-lg-10">
   <li><a href="#" style="
     height: 40px;">Student Details</a></li>
   <li><a href="#" style="
@@ -154,18 +151,18 @@ td {
 
     <div class="container-fluid">
         <div class="centered-form">
-            <div class="row">
-            <div class="col-lg-10">
-            <h3 class="text1">4. School Details</h3>
+            
+        <div class="col-lg-offset-1  col-lg-10 ">
+         <div class="row">
+        <div class="col-lg-4">
+            <h4 class="text1">4. School Details</h4>
             </div>
             <div class="col-lg-offset-11">
-<a href="School_details.html" class="btn btn-info">
+<a href="School_details.html" class="btn btn-primary">
       <span class="glyphicon glyphicon-pencil"></span> Edit
    </a>
             </div>
             </div>
-        <div class="col-lg-12 ">
-
         	<div class="panel panel-success ">
         		<div class="panel-heading">
 			        <h3 class="panel-title">4.1 Current School Attended </h3>
@@ -332,15 +329,9 @@ td {
 </form>
 </div>
 </div>
-
-
 </div>
 </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="School Registration/js/bootstrap.min.js"></script>
-
 </body>
 </html>		    			
 			    			

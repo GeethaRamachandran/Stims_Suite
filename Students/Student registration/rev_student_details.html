@@ -5,100 +5,94 @@ Registration Form
 </title>
 <!-- Latest compiled and minified CSS -->
 <!-- Bootstrap -->
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/accordion.css">
-
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style type="text/css">
       td
       {
         padding:10px;
       }
-      
-    
-
 .margin_for_breadcrumb
 {
   margin-top:19px;
 }
-
-
-
-.breadcrumb { 
-  list-style: none; 
-  overflow: hidden; 
-  font-size:16px;
-}
-.breadcrumb li { 
-  float: left; 
-}
-.breadcrumb li a {
-  color: white;
-  text-decoration: none; 
-  padding: 10px 0 10px 50px;
-  /*background: brown;*/ /* fallback color */
-  background: hsla(0, 0%, 0%,1); 
-  position: relative; 
-  display: block;
-  float: left;
-}
-.breadcrumb li a::after { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
-  border-bottom: 50px solid transparent;
-  border-left: 30px solid hsla(0, 0%, 0%,1);
-  position: absolute;
-  top: 50%;
-  margin-top: -50px; 
-  left: 100%;
-  z-index: 2; 
-}
-.breadcrumb li a::before { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 50px solid transparent;       
-  border-bottom: 50px solid transparent;
-  border-left: 30px solid white;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px; 
-  margin-left: 3px;
-  left: 100%;
-  z-index: 1; 
-}
-.breadcrumb li:first-child a {
-  padding-left: 60px;
-  background: hsla(140, 100%, 40%,1);
-}
-
-.breadcrumb li:first-child a:after { border-left-color: hsla(140, 100%, 40%,1);
-  padding-left: 79px;
-}
-.breadcrumb > li 
-{ 
-  text-shadow: 0 0px 0 #FAE;
-}
-
-  </style>
-   
-
+.breadcrumb {
+          padding: 0px 27px;
+            list-style: none;
+            overflow: hidden;
+            font-size: 14px;
+            background: white;
+        }
+        .breadcrumb li {
+            float: left;
+        }
+        .breadcrumb li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 0 10px 20px;
+            /*background: brown;*/
+            /* fallback color */
+            
+            background: hsla(0, 0%, 0%, 1);
+            position: relative;
+            display: block;
+            float: left;
+        }
+        .breadcrumb li a::after {
+            content: " ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            /* Go big on the size, and let overflow hide */
+            
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid hsla(0, 0%, 0%, 1);
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            left: 100%;
+            z-index: 2;
+        }
+        .breadcrumb li a::before {
+            content: " ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid white;
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            margin-left: 3px;
+            left: 100%;
+            z-index: 1;
+        }
+        .breadcrumb li:first-child a {
+            padding-left: 27px;
+            background: hsla(140, 100%, 40%, 1);
+        }
+        .breadcrumb li:first-child a:after {
+            border-left-color: hsla(140, 100%, 40%, 1);
+            padding-left: 79px;
+        }
+        .breadcrumb > li {
+            text-shadow: 0 0px 0 #FAE;
+        }
+ </style>
 </head>
 <body class="margin_for_breadcrumb">
-<ul class="breadcrumb">
+<center>
+            
+                <h4 >For Review</h4><hr/>
+                <h4>Details that you have entered</h4>
+                <h4>Please check once again</h4>
+            </center>
+            <hr/>
+<ul class="breadcrumb col-lg-offset-1  col-lg-10">
   <li><a href="#" style="
     height: 40px;">Student Details</a></li>
   <li><a href="#" style="
@@ -114,28 +108,19 @@ Registration Form
   <li><a href="#" style="
     height: 40px;">Uploads & Declaration</a></li>
 </ul>
-
-
-    <div class="container-fluid" ng-app="myApp" ng-controller="customer" >
+<div class="container-fluid" ng-app="myApp" ng-controller="customer" >
         <div class="centered-form">
-            <center>
-            
-                <h3 >For Review</h3><hr/>
-                <h4>Details that you have entered</h4>
-                <h4>Please check once again</h4>
-            </center>
-            <hr/>
-            <div class="row">
-            <div class="col-lg-10">
-            <h3 class="text1">1. Student Details</h3>
-            </div>
-            <div class="col-lg-offset-11">
-<a href="table1.html" class="btn btn-info">
+        <div class="col-lg-offset-1  col-lg-10">
+        <div class="row">
+        <div class="col-lg-4">
+        <h4 class="text1">1. Student Details</h4>
+        </div>
+        <div class="col-lg-offset-11">
+            <a href="Student_details.html" class="btn btn-primary">
       <span class="glyphicon glyphicon-pencil"></span> Edit
    </a>
-            </div>
-        <div class="col-lg-12 ">
-
+        </div>
+        </div>
         	<div class="panel panel-success ">
         		<div class="panel-heading">
 			        <h3 class="panel-title">1.1 Basic Details </h3>
@@ -148,13 +133,7 @@ Registration Form
 			    			 <div class="form-group">	
 			    			<tr>
 			    			    <td>
-			    			
-			    			       
-           
-              <label for="appliedClass" class="control-label" >Applied for class:</label>
-              
-
-                                </td>
+			               <label for="appliedClass" class="control-label" >Applied for class:</label>     </td>
                                 <td></td></tr>
                                 <tr>
                                 <td>
@@ -208,14 +187,14 @@ Registration Form
 
                           </table>
                         </div>
-                        <div class="col-lg-offset-10">
+                        <div class="col-lg-offset-9">
                             <table>
 
 	                            <tr>
 	
 		                            <td>
 		
-			                            <img src="jhony.jpg" class="img-responsive img-rounded" style="width:200px;height: 180px;">
+			                            <img src="jhony.jpg" class="img-responsive img-rounded" style="width:180px;height: 180px;">
 		
 		                            </td>
 	
@@ -387,8 +366,6 @@ Registration Form
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="School Registration/js/bootstrap.min.js"></script>
-
 </body>
 </html>		    			
 			    			
